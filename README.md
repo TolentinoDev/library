@@ -11,4 +11,7 @@ This web application was built for Fayetteville State University using Web2py. T
 
 
 
-![alt tag](https://github.com/RT-Design/library/blob/master/Pictures/Index.png)
+![alt tag](https://github.com/TolentinoDev/library/blob/master/Pictures/index.png)
+![alt tag](https://github.com/TolentinoDev/library/blob/master/Pictures/pg1.png)
+![alt tag](https://github.com/TolentinoDev/library/blob/master/Pictures/pg2.png)
+![alt tag](https://github.com/TolentinoDev/library/blob/master/Pictures/pg3.png)
