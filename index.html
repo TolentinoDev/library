@@ -1,0 +1,49 @@
+{{extend 'layout.html'}}
+
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="{{=URL('static','images/bg.jpg')}}" alt="Background" style="min-width:500px" width="2000" height="1000">
+    <div class="w3-display-topmiddle w3-padding-large w3-hide-small" style="width:45%">
+      <div class="w3-black w3-large  w3-hover-opacity-off w3-padding-small w3-round-xlarge">
+        <h1 class="w3-xlarge">Chesnutt Library</h1>
+        <hr class="w3-opacity">
+        <p>Use databases to find articles and information on a variety of subjects. </p>
+          <p><a href="{{=URL('default', 'subject')}}"<button onclick class="w3-btn-block w3-blue w3-round-xlarge w3-opacity w3-hover-opacity-off myFunction()">Let's Get Started!</button></a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+    function myFunction() {
+        document.getElementbyID('spinner').innerHTML = "Hello World";
+    }
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+
+body {font-size: 16 px;}
+</style>
+
+</body>
+</html>

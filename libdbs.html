@@ -1,0 +1,47 @@
+{{extend 'layout.html'}}
+
+{{block center}}
+    <div class="container-fluid">
+        {{i = 0}}
+            <h1 class="page-header">Exploring Chesnutt Library's Databases</h1>
+            <table class="table">
+                    <tr>
+                        {{#try:}}
+                            <td>{{=grid}}</td>
+                        {{#except:}}
+                        {{#pass}}
+                    </tr>
+            </table>
+        {{i += 1}}
+        {{pass}}
+    </div>
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        $(document).ready(function() {
+            $("#w2p_keywords").attr("onfocus", "");
+            if (getParameterByName("subject") != null) {
+                $("#w2p_keywords").val(getParameterByName("subject"));
+            } else if (getParameterByName("description") != null) {
+                $("#w2p_keywords").val(getParameterByName("description"));
+            } else if (getParameterByName("alpha") != null) {
+                $("#w2p_keywords").val(getParameterByName("alpha"));
+            }
+            if (getParameterByName("keywords") == null) {
+                $("form").submit();
+            }
+            /*$("#w2p_keywords").click(function(event) {
+                    $("#w2p_query_panel").hide();
+                    event.preventDefault();
+            });*/
+        });
+
+    </script>
+{{end}}

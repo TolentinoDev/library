@@ -1,0 +1,267 @@
+{{extend 'layout.html'}}
+{{block center}}
+    <div class="container">
+                <div class="jumbotron">
+            <h1>Library Admin</h1>
+            <p>
+                Navigate to:
+                    <!--<a href="https://web.uncfsu.edu/uncfsulibrary/default/index">Home</a> or --> <a href="https://web.uncfsu.edu/uncfsulibrary/default/adminlibdbs?keywords=">Admin View </a>
+            </p>
+        </div>
+        <form class="form-horizontal" action="{{=URL('default', 'admin')}}" method="POST">
+
+            <div class="jumbotron">
+            <blockquote>
+                <h2>Subjects</h2></blockquote>
+                <h4>
+                    <span class = "glyphicon glyphicon-check"></span> Check all the subjects that apply!
+                </h4>
+            </div>
+            <div class="form-group">
+    
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="African-American Studies">African-American Studies</label>
+    </div>
+                    
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Art">Art</label>
+    </div>
+                    
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Astronomy">Astronomy</label>
+    </div>
+                    
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Biology">Biology</label>
+    </div>
+                    
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Business">Business</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Chemistry">Chemistry</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Communications Studies">Communications Studies</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Computer Science">Computer Science</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Criminal Justice">Criminal Justice</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Earth Science">Earth Science</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Economics">Economics</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Education">Education</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="English">English</label>
+    </div> 
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Fire Science">Fire Science</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Foreign Languages">Foreign Languages</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Forensic Science">Forensic Science</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Geography">Geography</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Health">Health</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="History">History</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Language">Language</label>
+    </div>
+
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Linguistics">Linguistics</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Literature">Literature</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Mathematics">Mathematics</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Media Studies">Media Studies</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Medicine">Medicine</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Music">Music</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input type="checkbox" value="Newspapers">Newspapers</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="North Carolina">North Carolina</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Nursing">Nursing</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Philosophy">Philosophy</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Physics">Physics</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Political Science">Political Science</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Psychology">Psychology</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Religion">Religion</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Social Work">Social Work</label>
+    </div>
+    <div class="checkbox" name ="subject">
+      <label><input name = "subject" type="checkbox" value="Nursing">Nursing</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Philosophy">Philosophy</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Physics">Physics</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Political Science">Political Science</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Psychology">Psychology</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Religion">Religion</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Social Work">Social Work</label>
+    </div> 
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Physics">Physics</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Political Science">Political Science</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Psychology">Psychology</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Religion">Religion</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Social Work">Social Work</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Sociology">Sociology</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Statistics">Statistics</label>
+    </div>
+    <div class="checkbox" name = "subject">
+    <label><input name = "subject" type="checkbox" value="Theater">Theater</label>
+    </div>
+    <div class="checkbox" name = "subject">
+      <label><input name = "subject" type="checkbox" value="Womens Studies">Womens Studies</label>
+    </div>
+            </div>
+</div>
+                  <div class="jumbotron">
+            <blockquote>
+                <h2>Title</h2>
+
+                      </blockquote>
+                                  <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-md-4"></label>
+                        <div class="col-md-8">
+                            <input type="text" name="title" class="form-control" required placeholder="Title" maxlength='200'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        
+        <div class="jumbotron">
+            <blockquote>
+                <h2>Description</h2></blockquote>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label col-md-4"></label>
+                        <div class="col-md-8">
+                            <input type="text" name="description" class="form-control" required placeholder="Describe" maxlength='1000'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <blockquote>
+                <h2>URL</h2></blockquote>
+            <div class="row">
+                <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label col-md-4"></label>
+                <div class="input-group col-md-8">
+                    <input name="url" type="url" class="form-control" required placeholder="https://www.google.com">
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+            <div class="form-group">
+                <div class="col-md-12 text-center">
+                    <input class="btn btn-lg btn-primary" type="submit" name="Submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#admclick").click(function() {
+                $("#admclass").slideToggle("slow");
+            });
+            $("#almclick").click(function() {
+                $("#almclass").slideToggle("slow");
+            });
+            $("#fcclick").click(function() {
+                $("#fcclass").slideToggle("slow");
+            });
+            $("#fbclick").click(function() {
+                $("#fbclass").slideToggle("slow");
+            });
+            $("#faclick").click(function() {
+                $("#faclass").slideToggle("slow");
+            });
+            $("#hrclick").click(function() {
+                $("#hrclass").slideToggle("slow");
+            });
+            $("#itclick").click(function() {
+                $("#itclass").slideToggle("slow");
+            });
+            $("#regclick").click(function() {
+                $("#regclass").slideToggle("slow");
+            });
+            $("#saclick").click(function() {
+                $("#saclass").slideToggle("slow");
+            });
+        });
+    </script>
+{{end}}
